@@ -86,7 +86,7 @@ const card = new THREE.Mesh(
   cardMaterials
 );
 card.position.set(0, 25, 0);
-card.rotation.y = (Math.PI / 2) * 3;
+card.rotation.y = (Math.PI / 2) * 5;
 
 const light_0 = new THREE.DirectionalLight(COLOR_WHITE, 2);
 const light_1 = new THREE.DirectionalLight(COLOR_WHITE, 1);
