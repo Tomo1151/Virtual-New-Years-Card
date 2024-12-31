@@ -112,7 +112,7 @@ await exrloader.load(
   },
   function (xhr) {
     progress.value = (xhr.loaded / xhr.total) * 100;
-    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+    // console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
   }
 );
 
