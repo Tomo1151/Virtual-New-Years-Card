@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>バーチャル 年賀状</title>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="script.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <section
+      id="loading"
+      style="
+        display: flex;
+        font-size: 1.5rem;
+        flex-direction: column;
+        font-family: 'M PLUS Rounded 1c', serif;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100dvw;
+        height: 100dvh;
+        z-index: 1;
+        pointer-events: none;
+        transition-duration: 1s;
+      "
+    >
+      <h1>バーチャル 年賀状</h1>
+      <p>明けましておめでとうございます！</p>
+      <p>本年もよろしくお願いします！</p>
+      <progress id="progress" value="0" max="100"></progress>
+    </section>
+    <canvas
+      id="canvas"
+      style="
+        width: 100dvw;
+        height: 100dvh;
+        overflow: hidden;
+        background-color: white;
+      "
+    ></canvas>
+  </body>
+</html>
